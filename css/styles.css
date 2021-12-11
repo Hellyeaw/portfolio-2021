@@ -113,13 +113,11 @@ body {
 
 .menu-button:hover .menu-line-one {
   transform: translateY(0.96vmax);
-  /* opacity: 0.2; */
   transition: .3s ease-in-out;
 }
 
 .menu-button:hover .menu-line-two {
   transform: translateY(-0.96vmax);
-  /* opacity: 0.2; */
   transition: .3s ease-in-out;
 }
 
@@ -235,13 +233,11 @@ body {
 
 .contact-button:hover .contact-line-one {
   transform: translateY(0.96vmax);
-  /* opacity: 0.2; */
   transition: .3s ease-in-out;
 }
 
 .contact-button:hover .contact-line-two {
   transform: translateY(-0.96vmax);
-  /* opacity: 0.2; */
   transition: .3s ease-in-out;
 }
 
@@ -471,7 +467,7 @@ body {
 
 .links {
   text-decoration: none;
-  font-size: 5vmax;
+  font-size: 4vmax;
   color: black;
   display: block;
   padding-top: 3vmax;
@@ -496,7 +492,6 @@ body {
 .footer-change {
   font-size: 9vmax;
   border-bottom: solid black 5px;
-  /* transform: skewx(-10deg); */
   transform-origin: bottom;
   display: inline-block;
 }
@@ -536,7 +531,7 @@ footer p {
 
 .abt-header {
   z-index: 3;
-  height: 150vh;
+  height: 140vh;
 }
 
 .abt-org {
@@ -683,9 +678,6 @@ footer p {
 .game-footer {
   background-color: #F7DAD9;
   background-image: url(../images/web-line.svg);
-  /* background-repeat: no-repeat;
-  background-position: center;
-  background-size: 101%; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 101%;
@@ -741,30 +733,8 @@ footer p {
   width: 84%;
 }
 
-.web-proj-2 {
-  border: solid black 1px;
-  margin: 0 8vmax 5vmax;
-  padding: 3vmax 2vmax;
-}
-
-.web-sec-one {
-  display: grid;
-  grid-template-columns: (3, 1fr);
-  margin-top: 3vmax;
-}
-
 .web-sec-one p {
   font-weight: 500;
-}
-
-.web-img-cont {
-  padding: 1vmax 0 3vmax;
-  display: flex;
-  justify-content: center;
-}
-
-.web-img {
-  width: 83.5%;
 }
 
 /* pixel art page */
@@ -804,8 +774,6 @@ footer p {
   opacity: 0;
   transform: translateY(1em);
   transition: all 1s .3s ease-in-out;
-  /* transition: all .3s .5s ease-out; */
-  /*	will-change: all;*/
 }
 
 .slide-toview.is-visible {
@@ -817,8 +785,6 @@ footer p {
   opacity: 0;
   transform: translateY(1em);
   transition: all 1s .1s ease-in-out;
-  /* transition: all .3s .5s ease-out; */
-  /*	will-change: all;*/
 }
 
 .slide-toview2.is-visible {
@@ -830,8 +796,6 @@ footer p {
   opacity: 0;
   transform: translateY(1em);
   transition: all 1s ease-in-out;
-  /* transition: all .3s .5s ease-out; */
-  /*	will-change: all;*/
 }
 
 .slide-toview-footer.is-visible {
@@ -892,15 +856,6 @@ a.big {
 }
 
 .trans-3 {
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  transform: translateY(100%);
-  width: 100%;
-  height: 100%;
-  z-index: 101;
-  background-color: #EEEEED;
-  transition: 0.5s ease-in-out; */
   position: fixed;
   top: 0;
   left: 0;
@@ -914,7 +869,6 @@ a.big {
 }
 
 .trans-3.slide-active {
-  /* transform: translateY(0); */
   pointer-events: all;
   opacity: 1;
   transition: 1s ease-in-out;
