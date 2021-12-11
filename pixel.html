@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="icon" href="images/logo.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/anim.css">
+</head>
+
+<body>
+  <!-- Cursor -->
+  <div class="cursor arrow-right"></div>
+  <div class="cursor2 arrow-right"></div>
+  <div class="cursor3 arrow-right"></div>
+
+  <main class="wrapper">
+    <div class="inner-wrapper fade">
+
+      <!-- navbar -->
+      <nav>
+        <a class="logo-link logo" href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
+        <div id="openBtn" class="menu-button">
+          <div class="menu-line-one"></div>
+          <p class="menu-text">Menu</p>
+          <div class="menu-line-two"></div>
+        </div>
+      </nav>
+
+      <div class="scroll-nav" id="scroll-nav">
+        <div id="closeBtn" class="closeBtn">
+          <div class="close-line-one"></div>
+          <div class="close-line-two"></div>
+        </div>
+
+        <a href="index.html" class="nav-link nav-link-cont one">Helia</a>
+        <a id="nav-link-close" href="#works" class="nav-link two" onclick="closeTab()">Works</a>
+        <a id="nav-link-close" href="#contact" class="nav-link nav-link-cont three" onclick="closeTab()">Contact</a>
+        <a href="about.html" class="nav-link four">About</a>
+      </div>
+
+      <!-- body -->
+      <header class="transition grow is-active pixel-header">
+        <h2>Pixel Art & <br> Animation </h2>
+      </header>
+
+      <section class="game-sec-one">
+        <div class="game-proj show-on-scroll fade-in">
+          <h3>Wake Me Up</h3>
+          <p>Wake Me Up is an experimentation of the developers' vision towards art, music, narration and gameplay. This demo was created during the Game Endeavor game jam. This prototype was a part of the pre-production stage of a bigger more
+            complex
+            project called SemiColon. The ultimate aim of the project is to raise awareness on mental health issues, and through this prototype we were able to test some of our game mechanic ideas.</p>
+        </div>
+        <div class="game-contrib show-on-scroll fade-in">
+          <h5>Date:</h5>
+          <p>Jan 2021</p>
+          <h5>Team:</h5>
+          <p>Art / Game Design: Helia Golmohammadi</p>
+          <P>Programming / Music: Kamyar Karimi</p>
+          <h5>Link:</h5>
+          <a href="https://noakishere.itch.io/wake-me-up" target="_blank">Wake me up game</a>
+        </div>
+      </section>
+
+      <section class="game-img">
+        <img class="game-img-og show-on-scroll slide-toview" src="images/game-1/Screenshot2.png" alt="game screenshot">
+      </section>
+
+      <section class="game-img-two">
+        <img class="game-pic-1 show-on-scroll slide-toview" src="images/game-1/Screenshot.png" alt="game pic">
+        <img class="game-pic-2 show-on-scroll slide-toview" src="images/game-1/Gif02.gif" alt="game pic">
+      </section>
+
+      <section class="game-sec-one">
+        <div class="game-proj-2 show-on-scroll fade-in">
+          <p>The idea of SemiColon is to create a game, where the main character explores different emotions and face his demons, just to realize that all of
+            those parts of him are what make him human and complete. The goal was to create a space where the player could feel safe and to understand that they are not going through their experiences and feeling their emotions alone.</p>
+          <p>The inspiration behind this game was the story of the young student, Ming Mei, who took her own life on campus at Concordia University, after struggling
+            with hopelessness, body image and self love. </p>
+          <p>After this prototype, I decided that it's better to have the main character genderless, so that more players can relate to it and can better explore
+            themselves while playing the game. </p>
+        </div>
+      </section>
+    </div>
+
+
+
+    <footer class="transition exit grow pixel-footer show-on-scroll slide-toview">
+      <a href="#l" class="footer big"></a>
+      <h2 class="ftitle">Logo Design </h2>
+      <!-- <a href="Game.html" class="previous">Previous project:</a> -->
+    </footer>
+  </main>
+
+  <script src="js/anim.js"></script>
+</body>
+
+</html>

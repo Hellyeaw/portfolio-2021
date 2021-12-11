@@ -1,0 +1,490 @@
+/* cursor */
+@media screen and (max-width: 1500px) {
+  *{
+    cursor: default;
+  }
+  .cursor, .cursor2, .cursor3 {
+    display: none;
+  }
+}
+
+/* Tablet view */
+@media screen and (max-width: 1300px) {
+
+  .index-body {
+    background-size: 0%;
+  }
+
+  .scroll-text {
+    left: 6vmax;
+    position: relative;
+  }
+
+  /* Helia Design */
+  .Helia-design {
+    height: 75vh;
+  }
+
+  /* my-intro */
+  .description-text {
+    padding: 0;
+    height: 115vh;
+  }
+
+  .first-text {
+    font-size: 4vmax;
+    margin-top: 10vmax;
+  }
+
+  .second-text {
+    grid-row: 2/2;
+    grid-column: 1/2;
+    font-size: 4vmax;
+    padding: 0 6vmax;
+  }
+
+  /* Works */
+  .works-sec {
+    height: 50vh;
+  }
+
+  .works1 {
+    font-size: 19.3vmax;
+    left: 6vmax;
+  }
+
+  .works2 {
+    font-size: 19.3vmax;
+    left: 6.5vmax;
+  }
+
+  .works-links {
+    left: 6vmax;
+    width: 70%;
+  }
+
+  .links {
+    font-size: 3.5vmax;
+    padding-top: 3vmax;
+  }
+
+  /* footer */
+  .footer-text {
+    font-size: 4.5vmax;
+  }
+
+  .footer-change {
+    font-size: 8vmax;
+    border-bottom: solid black .7vmax;
+  }
+
+  .footer-link-cont {
+    width: 70%;
+  }
+
+  footer p {
+    padding-top: 2vmax;
+  }
+
+  /* About me page */
+  .abt-body {
+    background-image: url(../images/abt.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 59%;
+  }
+
+  .abt-header {
+    z-index: 3;
+    height: 150vh;
+  }
+
+  .abt-org {
+    color: #E26A2C;
+    font-size: 8vmax;
+  }
+
+  .abt-txt {
+    font-size: 5vmax;
+    padding: 10vmax 6vmax 7vmax;
+  }
+
+  .abt-txt2 {
+    padding: 0.5vmax 6vmax;
+    font-size: 1.7vmax;
+    font-weight: 500;
+    width: 75%;
+    line-height: 3.5vmax;
+  }
+
+  .abt-links {
+    height: 100vh;
+    padding: 1vmax 6vmax 0;
+  }
+
+  .abt-linkel {
+    font-size: 3vmax;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding-top: 2.5vmax;
+  }
+
+  .abt-linkel:hover {
+    text-decoration: underline;
+    transform: skewx(-15deg);
+    transform-origin: bottom;
+    transition-duration: .1s;
+  }
+
+  .pic-cont {
+    height: 130vh;
+  }
+
+  .my-pic {
+    position: relative;
+    left: 38vmax;
+    top: 5vmax;
+    width: 40%;
+    border-radius: 20px;
+  }
+
+  /* game-design page */
+  .game-header {
+    background-color: #B9CEEB;
+    background-image: url(../images/game-line.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 101%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .game-header h2 {
+    font-size: 10vmax;
+    z-index: 1;
+  }
+
+  .game-sec-one {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    margin-top: 4vmax;
+  }
+
+  .game-proj {
+    grid-column: 1/3;
+    border: solid black 1px;
+    padding: 2vmax;
+    margin: 2vmax 1vmax 2vmax 8vmax;
+  }
+
+  .game-proj-2 {
+    border: solid black 1px;
+    margin: 0 8vmax 5vmax;
+    padding: 2vmax;
+  }
+
+  .game-contrib {
+    grid-column: 3/4;
+    border: solid black 1px;
+    padding: 2vmax;
+    margin: 2vmax 8vmax 2vmax 1vmax;
+  }
+
+  .game-sec-one h3 {
+    font-size: 3vmax;
+    padding-bottom: 1.5vmax;
+  }
+
+  .game-sec-one h5 {
+    font-size: 1.5vmax;
+    padding: 0.7vmax 0;
+  }
+
+  .game-sec-one p {
+    font-weight: 500;
+  }
+
+  .game-contrib a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+
+  .game-contrib a:hover {
+    color: #77ACF1;
+    text-decoration: underline;
+    transition: all .3s ease-in-out;
+  }
+
+  .game-img {
+    padding: 2vmax 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .game-img-og {
+    width: 83.5%;
+  }
+
+  .game-img-two {
+    margin: 2vmax 8vmax 2vmax;
+  }
+
+  .game-pic-1 {
+    width: 53.1%;
+  }
+
+  .game-pic-2 {
+    width: 46.4%;
+  }
+
+  .game-footer {
+    background-color: #F7DAD9;
+    background-image: url(../images/web-line.svg);
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: 101%; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 101%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .game-footer h2 {
+    font-size: 10vmax;
+    z-index: 1;
+  }
+
+  /* web design page */
+  .web-header h2 {
+    font-size: 10vmax;
+    z-index: 2;
+  }
+
+  .web-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7DAD9;
+    background-image: url(../images/web-line.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 101%;
+    height: 70vh;
+  }
+
+  .web-footer {
+    background-color: #C1CFC0;
+    background-image: url(../images/pixel-line.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 101%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .web-footer h2 {
+    font-size: 10vmax;
+    z-index: 1;
+  }
+
+  .web-gif {
+    padding: 2vmax 0;
+    display: flex;
+    justify-content: center;
+    width: 84%;
+  }
+
+  .web-proj-2 {
+    border: solid black 1px;
+    margin: 0 8vmax 5vmax;
+    padding: 3vmax 2vmax;
+  }
+
+  .web-sec-one {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    margin-top: 3vmax;
+  }
+
+  .web-sec-one p {
+    font-weight: 500;
+  }
+
+  .web-img-cont {
+    padding: 1vmax 0 3vmax;
+    display: flex;
+    justify-content: center;
+  }
+
+  .web-img {
+    width: 83.5%;
+  }
+
+  /* pixel art page */
+  .pixel-header h2 {
+    font-size: 10vmax;
+    z-index: 2;
+  }
+
+  .pixel-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C1CFC0;
+    background-image: url(../images/pixel-line.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 101%;
+    height: 70vh;
+  }
+
+  .pixel-footer {
+    background-color: #DBC6EB;
+    background-image: url(../images/logo-line.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 101%;
+    height: 70vh;
+  }
+
+  .pixel-footer h2 {
+    font-size: 10vmax;
+    z-index: 1;
+  }
+
+  /* elements transition */
+  .slide-toview {
+    opacity: 0;
+    transform: translateY(1em);
+    transition: all 1s .3s ease-in-out;
+    /* transition: all .3s .5s ease-out; */
+    /*	will-change: all;*/
+  }
+
+  .slide-toview.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .slide-toview2 {
+    opacity: 0;
+    transform: translateY(1em);
+    transition: all 1s .1s ease-in-out;
+    /* transition: all .3s .5s ease-out; */
+    /*	will-change: all;*/
+  }
+
+  .slide-toview2.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .slide-toview-footer {
+    opacity: 0;
+    transform: translateY(1em);
+    transition: all 1s ease-in-out;
+    /* transition: all .3s .5s ease-out; */
+    /*	will-change: all;*/
+  }
+
+  .slide-toview-footer.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .fade-in {
+    opacity: 0;
+    transition: all 1s .3s ease-in-out;
+  }
+
+  .fade-in.is-visible {
+    opacity: 1;
+  }
+
+  /* page transition */
+  a.big {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .wrapper {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .fade {
+    opacity: 1;
+    transition: all .3s ease;
+  }
+
+  .grow {
+    height: 65vh;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transition: all .5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grow.is-active {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .exit {
+    transition: all .5s ease;
+  }
+
+  .trans-3 {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    background-color: #EEEEED;
+    transition: 0.5s ease-in-out; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 101;
+    background-color: #EEEEED;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+  }
+
+  .trans-3.slide-active {
+    /* transform: translateY(0); */
+    pointer-events: all;
+    opacity: 1;
+    transition: 1s ease-in-out;
+  }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+  .Helia-design {
+    height: 50vh;
+  }
+}

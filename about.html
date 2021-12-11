@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="icon" href="images/logo.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/anim.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+</head>
+
+<body class="abt-body">
+  <div class="index-trans trans-3 slide-active"></div>
+
+  <!-- Cursor -->
+  <div class="cursor arrow-right"></div>
+  <div class="cursor2 arrow-right"></div>
+  <div class="cursor3 arrow-right"></div>
+
+  <!-- navbar -->
+  <nav>
+    <a class="logo-link logo" href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
+    <div id="openBtn" class="menu-button">
+      <div class="menu-line-one"></div>
+      <p class="menu-text">Menu</p>
+      <div class="menu-line-two"></div>
+    </div>
+  </nav>
+
+  <div class="scroll-nav" id="scroll-nav">
+    <div id="closeBtn" class="closeBtn">
+      <div class="close-line-one"></div>
+      <div class="close-line-two"></div>
+    </div>
+
+    <a href="index.html" class="nav-link nav-link-cont one">Helia</a>
+    <a id="nav-link-close" href="#works" class="nav-link two" onclick="closeTab()">Works</a>
+    <a id="nav-link-close" href="#contact" class="nav-link nav-link-cont three" onclick="closeTab()">Contact</a>
+    <a href="about.html" class="nav-link four">About</a>
+  </div>
+
+  <!-- Contact me button -->
+  <div class="social">
+    <div class="contact-button" id="social">
+      <div class="contact-line-one"></div>
+      <p class="contact-text">Conatct Me</p>
+      <div class="contact-line-two"></div>
+    </div>
+    <div class="social-links">
+      <a class="linked-btn" target="_blank" href="https://www.linkedin.com/in/helia-gol-mohammadi-613b9521b/">Li</a>
+      <a class="mail-btn" target="_blank" href="mailto: heliagmohammadi@gmail.com">Mail</a>
+      <a class="twitter-btn" target="_blank" href="https://twitter.com/Hell_yeaw">Tw</a>
+    </div>
+  </div>
+
+  <!-- header -->
+  <header class="abt-header">
+    <h2 class="abt-txt">Hi, I'm <span class="abt-org">Helia Gol</span> <br>
+      A Montreal based design <br> student!</h2>
+    <p class="abt-txt2">I'm an Iranian-Canadian student and I recently graduated from Dawson College with a Diploma in sciences.
+      Since then, I've been studying a microprogram in user interface and web design at Concordia University, and I am currently enrolled in a User Experience Certificate program in the same university.
+      My goal is to integrate my knowledge and enthusiasm in sciences with my passion for design and arts.</p>
+    <p class="abt-txt2">If you would like to know more about me, you can check out <br> the links below!!</p>
+  </header>
+
+  <div class="abt-links">
+    <a class="abt-linkel" href="#">Transcript of Grades</a> <br>
+    <a class="abt-linkel" href="#">Letter of intent</a> <br>
+    <a class="abt-linkel" href="#">Curriculum vitae</a><br>
+    <a class="abt-linkel" href="#">letters of reference</a><br>
+  </div>
+
+  <div class="pic-cont">
+    <img class="my-pic" src="images/me.jpg" alt="">
+  </div>
+
+
+  <script src="js/anim.js"></script>
+  <script type="text/javascript">
+    window.onload = () => {
+      const indexClick = document.querySelectorAll('.logo-link');
+      const indexTransitionEl = document.querySelector('.index-trans');
+
+      setTimeout(() => {
+        indexTransitionEl.classList.remove('slide-active');
+      }, 500);
+
+      indexClick.forEach(function (t) {
+        t.addEventListener('click', e => {
+          e.preventDefault();
+          const target = e.target.href;
+
+          indexTransitionEl.classList.add('slide-active');
+
+          setInterval(() => {
+            window.location.href = target;
+          }, 500);
+        });
+      });
+
+    };
+  </script>
+</body>
+
+</html>

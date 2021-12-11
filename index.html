@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="icon" href="images/logo.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/anim.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+</head>
+
+<body>
+  <div class="index-trans trans-3 slide-active"></div>
+
+  <!-- Cursor -->
+  <div class="cursor arrow-right"></div>
+  <div class="cursor2 arrow-right"></div>
+  <div class="cursor3 arrow-right"></div>
+
+  <!-- navbar -->
+  <nav>
+    <a class="logo-link logo" href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
+    <div id="openBtn" class="menu-button">
+      <div class="menu-line-one"></div>
+      <p class="menu-text">Menu</p>
+      <div class="menu-line-two"></div>
+    </div>
+  </nav>
+
+  <div class="scroll-nav" id="scroll-nav">
+    <div id="closeBtn" class="closeBtn">
+      <div class="close-line-one"></div>
+      <div class="close-line-two"></div>
+    </div>
+
+    <a href="index.html" class="nav-link nav-link-cont one">Helia</a>
+    <a id="nav-link-close" href="#works" class="nav-link two" onclick="closeTab()">Works</a>
+    <a id="nav-link-close" href="#contact" class="nav-link nav-link-cont three" onclick="closeTab()">Contact</a>
+    <a href="about.html" class="nav-link four">About</a>
+  </div>
+
+  <!-- Contact me button -->
+  <div class="social">
+    <div class="contact-button" id="social">
+      <div class="contact-line-one"></div>
+      <p class="contact-text">Conatct Me</p>
+      <div class="contact-line-two"></div>
+    </div>
+    <div class="social-links">
+      <a class="linked-btn" target="_blank" href="https://www.linkedin.com/in/helia-gol-mohammadi-613b9521b/">Li</a>
+      <a class="mail-btn" target="_blank" href="mailto:heliagmohammadi@gmail.com">Mail</a>
+      <a class="twitter-btn" target="_blank" href="https://twitter.com/Hell_yeaw">Tw</a>
+    </div>
+  </div>
+
+  <!-- Helia Design -->
+  <div id="body-f">
+    <header class="Helia-design">
+      <div class="layer blue-box" data-speed="1"></div>
+      <div class="layer black-box" data-speed="-1"></div>
+      <div class="layer lightBlue-box" data-speed="1"></div>
+      <div class="name1">HELIA</div>
+      <div class="name2">HELIA</div>
+      <div class="layer first-triangle" data-speed="3"></div>
+      <div class="layer second-triangle" data-speed="-5"></div>
+      <div class="layer third-triangle" data-speed="6"></div>
+      <div class="layer fourth-triangle" data-speed="-5"></div>
+      <div class="layer fifth-triangle" data-speed="4"></div>
+      <div class="layer sixth-triangle" data-speed="-5"></div>
+    </header>
+
+    <!-- my intro -->
+    <div class="index-body">
+      <p class="scroll-text">Scroll Down</p>
+      <main class="description-text">
+        <div class="first-text">
+          <p>I'm a <span class="blue">learner</span>, <br>
+            an <span class="blue">adventurer</span>, <br>
+            and an <span class="blue">enthusiast</span>.
+          </p>
+        </div>
+        <div class="second-text">
+          <p>I'm also a <span class="blue">Graphic</span>, <br>
+            and <span class="blue">Web Designer</span>.
+          </p>
+        </div>
+      </main>
+
+      <section class="works" id="works">
+        <div class="works1">WORKS</div>
+        <div class="works2">WORKS</div>
+        <div class="works-links">
+          <a href="Game.html" class="links">Game Design</a>
+          <a href="web.html" class="links">Web Design</a>
+          <a href="pixel.html" class="links">Pixel Art & Animation</a>
+          <a href="logo.html" class="links">Logo Design</a>
+          <a href="jewel.html" class="links">Jewelery & Textiles</a>
+          <a href="draw.html" class="links">Technical Drawings</a>
+        </div>
+      </section>
+
+      <footer class="index-footer" id="contact">
+        <p class="footer-text">Would you like to </p>
+        <span class="footer-change" id="words">Have a chat</span>
+        <p class="footer-text">with me?</p>
+        <div class="footer-link-cont">
+          <a class="footer-link" target="_blank" href="mailto:heliagmohammadi@gmail.com">Shoot me an Email</a>
+          <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/helia-gol-mohammadi-613b9521b/">Add me on LinkedIn</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="js/anim.js"></script>
+  <script type="text/javascript">
+    window.onload = () => {
+      const indexClick = document.querySelectorAll('.logo-link');
+      const indexTransitionEl = document.querySelector('.index-trans');
+
+      setTimeout(() => {
+        indexTransitionEl.classList.remove('slide-active');
+      }, 500);
+
+      indexClick.forEach(function (t) {
+        t.addEventListener('click', e => {
+          e.preventDefault();
+          const target = e.target.href;
+
+          indexTransitionEl.classList.add('slide-active');
+
+          setInterval(() => {
+            window.location.href = target;
+          }, 500);
+        });
+      });
+
+    };
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="icon" href="images/logo.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/anim.css">
+</head>
+
+<body>
+  <!-- Cursor -->
+  <div class="cursor arrow-right"></div>
+  <div class="cursor2 arrow-right"></div>
+  <div class="cursor3 arrow-right"></div>
+
+  <main class="wrapper">
+    <div class="inner-wrapper fade">
+
+      <!-- navbar -->
+      <nav>
+        <a class="logo-link logo" href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
+        <div id="openBtn" class="menu-button">
+          <div class="menu-line-one"></div>
+          <p class="menu-text">Menu</p>
+          <div class="menu-line-two"></div>
+        </div>
+      </nav>
+
+      <div class="scroll-nav" id="scroll-nav">
+        <div id="closeBtn" class="closeBtn">
+          <div class="close-line-one"></div>
+          <div class="close-line-two"></div>
+        </div>
+
+        <a href="index.html" class="nav-link nav-link-cont one">Helia</a>
+        <a id="nav-link-close" href="#works" class="nav-link two" onclick="closeTab()">Works</a>
+        <a id="nav-link-close" href="#contact" class="nav-link nav-link-cont three" onclick="closeTab()">Contact</a>
+        <a href="about.html" class="nav-link four">About</a>
+      </div>
+
+      <!-- body -->
+      <header class="transition grow is-active web-header">
+        <h2>Web Design</h2>
+      </header>
+
+      <section class="game-sec-one">
+        <div class="game-proj show-on-scroll fade-in">
+          <h3>Sending Youth to War</h3>
+          <p>Wake Me Up is an experimentation of the developers' vision towards art, music, narration and gameplay. This demo was created during the Game Endeavor game jam. This prototype was a part of the pre-production stage of a bigger more
+            complex
+            project called SemiColon. The ultimate aim of the project is to raise awareness on mental health issues, and through this prototype we were able to test some of our game mechanic ideas.</p>
+        </div>
+        <div class="game-contrib show-on-scroll fade-in">
+          <h5>Date:</h5>
+          <p>Fall 2021</p>
+          <h5>Team:</h5>
+          <p>Web developement/ illustratin: Helia Golmohammadi</p>
+          <P>Music: Kamyar Karimi</p>
+          <h5>Link:</h5>
+          <a href="hellyeaw.github.io/sytw/" target="_blank">Sending Youth to War website</a>
+        </div>
+      </section>
+
+      <section class="game-img">
+        <img class="web-gif" src="images/web/SYTW.gif" alt="game screenshot">
+      </section>
+
+      <section class="web-sec-one">
+        <div class="web-proj-2 show-on-scroll fade-in">
+          <p>This website is based on my fathers teenage years when he had to join the army is the war between Iran-Iraq when he was 17 years-old. I find
+            this story incredibly tragic, not only because my father was involved in it, but because I know that there are thousands of yonng people getting involanturily
+            involved in these violant and brutal political games. On the last page of these website, I have gattered some resources and linked to help the sountries
+            in war for those who can financially afford it.</p>
+        </div>
+        <div class="web-img-cont show-on-scroll slide-toview">
+          <img class="web-img" src="images/web/illust.jpg" alt="SYTW pic">
+        </div>
+      </section>
+    </div>
+
+    <footer class="transition exit grow web-footer show-on-scroll slide-toview">
+      <a href="pixel.html" class="footer big"></a>
+          <h2 class="ftitle">Pixel Art & <br> Animation </h2>
+      <!-- <a href="Game.html" class="previous">Previous project:</a> -->
+    </footer>
+  </main>
+
+  <script src="js/anim.js"></script>
+</body>
+
+</html>
