@@ -67,10 +67,6 @@
   }
 
   /* Works */
-  .works-sec {
-    height: 50vh;
-  }
-
   .works1 {
     font-size: 19.3vmax;
     left: 6vmax;
@@ -176,4 +172,162 @@
   .Helia-design {
     height: 50vh;
   }
+}
+
+@media screen and (max-width: 800px) {
+
+  /* Helia Design */
+  .Helia-design {
+    height: 40vh;
+  }
+
+  .blue-box {
+    border: solid 1vmax #142850;
+    height: 20.5vmax;
+    width: 30vmax;
+    position: absolute;
+    top: 7.5vmax;
+    left: 15vmax;
+    z-index: 2;
+  }
+
+  .lightBlue-box {
+    border-bottom: solid 1vmax #0AF4FF;
+    border-left: solid 1vmax #0AF4FF;
+    height: 16vmax;
+    width: 26vmax;
+    position: absolute;
+    top: 12vmax;
+    left: 15vmax;
+    z-index: 6;
+  }
+
+  .black-box {
+    background: black;
+    height: 20vmax;
+    width: 35.5vmax;
+    position: absolute;
+    top: 12vmax;
+    left: 5.5vmax;
+    z-index: 4;
+  }
+
+  .name1 {
+    font-size: 14vmax;
+    position: absolute;
+    top: 11vmax;
+    left: 16vmax;
+    color: #FC8621;
+    z-index: 15;
+  }
+
+  .name2 {
+    font-size: 14vmax;
+    position: absolute;
+    top: 10.4vmax;
+    left: 15.2vmax;
+    color: white;
+    z-index: 12;
+  }
+
+  .first-triangle, .second-triangle, .third-triangle, .fourth-triangle, .fifth-triangle, .sixth-triangle {
+    display: none;
+  }
+
+  /* my-intro */
+  .description-text {
+    padding: 0;
+    height: 60vh;
+  }
+
+  .first-text {
+    margin-top: 3vmax;
+  }
+
+  /* Works */
+  .works1 {
+    font-size: 16vmax;
+    left: 6vmax;
+    display: inline;
+  }
+
+  .works2 {
+    font-size: 16vmax;
+    bottom: 19.8vmax;
+    display: inline;
+  }
+
+  .works-links {
+    margin-top: 7vmax;
+    left: 6vmax;
+    width: 50%;
+  }
+
+  .links {
+    font-size: 3.5vmax;
+    padding-top: 3vmax;
+  }
+
+
+  /* About me page */
+  .abt-body {
+    background-size: 0%;
+  }
+
+  .abt-header {
+    height: 100vh;
+  }
+
+  .abt-links {
+    height: 45vh;
+  }
+
+  .abt-linkel {
+    font-size: 3vmax;
+    padding-top: 2vmax;
+  }
+
+  .pic-cont {
+    height: 80vh;
+  }
+
+  .my-pic {
+    position: relative;
+    left: 6vmax;
+    top: 0vmax;
+    width: 40%;
+  }
+
+  /* game-design page */
+  .game-sec-one {
+    grid-template-rows: (2, 1fr);
+  }
+
+  .game-proj {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin: 2vmax 6vmax;
+  }
+
+  .game-proj-2 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin: 2vmax 6vmax;
+  }
+
+  .game-contrib {
+    grid-column: 1/4;
+    grid-row: 2/2;
+    margin: 2vmax 6vmax;
+  }
+
+  .game-sec-one h3 {
+    font-size: 2vmax;
+  }
+
+  /* page transition */
+  .grow {
+    height: 45vh;
+  }
+
 }
