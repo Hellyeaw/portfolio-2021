@@ -1,4 +1,10 @@
 /* large screen */
+/* @media screen and (min-width: 900px) {
+  .abt-links {
+    margin: 15vmax 0;
+  }
+} */
+
 @media screen and (min-width: 1800px) {
 
   .index-body {
@@ -116,6 +122,7 @@
 
   .abt-links {
     height: 45vh;
+    margin: 15vmax 0;
   }
 
   .abt-linkel {
@@ -275,11 +282,12 @@
   }
 
   .abt-header {
-    height: 100vh;
+    height: 80vh;
   }
 
   .abt-links {
-    height: 45vh;
+    height: 40vh;
+    margin: 3vmax;
   }
 
   .abt-linkel {
@@ -288,7 +296,7 @@
   }
 
   .pic-cont {
-    height: 80vh;
+    height: 30vh;
   }
 
   .my-pic {
@@ -330,4 +338,37 @@
     height: 45vh;
   }
 
+}
+
+@media screen and (max-width: 650px) {
+  .two {
+    padding-left: 5vmax;
+  }
+
+  .three {
+    padding-left: 5vmax;
+  }
+
+  .four {
+    padding-left: 5vmax;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .abt-header {
+    height: 120vh;
+  }
+
+  .abt-links {
+    height: 35vh;
+    margin-top: 9vmax;
+  }
+
+  .pic-cont {
+    height: 35vh;
+  }
+
+  .my-pic {
+    width: 55%;
+  }
 }
