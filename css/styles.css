@@ -211,7 +211,7 @@ html, body {
 /* Contact me button */
 .contact-button {
   position: fixed;
-  bottom: 1.5vmax;
+  bottom: 4.2vmax;
   right: 1.5vmax;
   z-index: 2;
 }
@@ -267,15 +267,15 @@ html, body {
 }
 
 .linked-btn {
-  bottom: 3.5vmax;
+  bottom: 6.5vmax;
 }
 
 .twitter-btn {
-  bottom: 6vmax;
+  bottom: 9vmax;
 }
 
 .mail-btn {
-  bottom: 8.5vmax;
+  bottom: 11.5vmax;
 }
 
 .linked-btn:hover, .twitter-btn:hover, .mail-btn:hover {
