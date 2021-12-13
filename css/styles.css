@@ -775,6 +775,33 @@ footer p {
   z-index: 1;
 }
 
+.pixel-img-two {
+  margin: 2vmax 8vmax 2vmax;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pixel-pic-1 {
+  width: 50%;
+  padding: 1vmax;
+}
+
+.pixel-pic-2 {
+  width: 50%;
+  padding: 1vmax;
+}
+
+.pixel-pic-3 {
+  width: 50%;
+  padding: 1vmax;
+}
+
+.pixel-gif {
+  padding: 2vmax 0;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
 /* elements transition */
 .slide-toview {
   opacity: 0;

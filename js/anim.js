@@ -55,13 +55,6 @@ function closeTab()
   navOverlay.style.height = '0vh';
 }
 
-// if (navOverlay.style.height === '0vh')
-// {
-//   bodyF.style.opacity = '1';
-// } else {
-//   bodyF.style.opacity = '0';
-// }
-
 // logo
 logo.addEventListener('click', () => {
   window.open('index.html', '_self');
@@ -133,6 +126,7 @@ function isElementInViewport(el) {
 
 // Paralax motion
 document.addEventListener('mousemove', parallax);
+const lays = document.querySelectorAll('layer');
 
 function parallax(e) {
   this.querySelectorAll('.layer').forEach(Layer => {
@@ -176,10 +170,3 @@ window.onload = () => {
     });
   });
 };
-
-// responsive
-// const indexB = document.querySelector('.index-body');
-//
-// if (window.innerWidth === 1250) {
-//   indexB.style.display = 'none';
-// }
