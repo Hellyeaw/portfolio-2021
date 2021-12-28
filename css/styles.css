@@ -44,7 +44,7 @@ html, body {
 }
 
 .cursor {
-  opacity: .5;
+  opacity: .8;
   position: fixed;
   pointer-events: none;
   z-index: 23;
@@ -72,6 +72,17 @@ html, body {
 
 .cursorinnerhover {
   opacity: 1;
+}
+
+.cursor-text {
+  position: fixed;
+  color: green;
+  font-size: 1vmax;
+  top: -0.4vmax;
+  left: 1.7vmax;
+  width: 9vmax;
+  pointer-events: none;
+  z-index: 23;
 }
 
 /* navbar */
@@ -645,12 +656,15 @@ footer p {
 
 .game-sec-one p {
   font-weight: 500;
+  font-size: 1.2vmax;
+  line-height: 1.8vmax;
 }
 
 .game-contrib a {
   text-decoration: none;
   color: black;
   font-weight: 500;
+  font-size: 1.2vmax;
 }
 
 .game-contrib a:hover {
@@ -695,6 +709,23 @@ footer p {
 .game-footer h2 {
   font-size: 10vmax;
   z-index: 1;
+  transition: .5s ease-in-out;
+}
+
+.game-linkss {
+  text-decoration: underline;
+  color: black;
+  font-weight: 500;
+}
+
+.game-linkss:hover {
+  color: #77ACF1;
+  text-decoration: underline;
+  transition: all .3s ease-in-out;
+}
+
+.last-section {
+  margin-bottom: 5vmax;
 }
 
 /* web design page */

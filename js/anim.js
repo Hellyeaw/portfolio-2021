@@ -2,6 +2,8 @@
 const cursor = document.querySelector('.cursor');
 const cursor2 = document.querySelector('.cursor2');
 const cursor3 = document.querySelector('.cursor3');
+const cursorT = document.querySelector('.cursor-text');
+const footer = document.querySelector('footer');
 const nextPageWeb = document.querySelector('.game-footer-text');
 const nextPagePixel = document.querySelector('.web-footer-text');
 const logo = document.querySelector('.logo');
@@ -33,6 +35,20 @@ document.addEventListener('mousemove', (e) => {
   const x = e.clientX;
   const y = e.clientY;
   cursor3.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+});
+
+document.addEventListener('mousemove', (e) => {
+  const x = e.clientX;
+  const y = e.clientY;
+  cursorT.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+});
+
+footer.addEventListener('mouseover', function () {
+  cursorT.innerHTML = footer.getAttribute('data-hover');
+});
+
+footer.addEventListener('mouseout', function () {
+  cursorT.innerHTML = '';
 });
 
 // Nav bar
@@ -69,7 +85,7 @@ if (socialBtn != null)
 }
 
 // timer Text;
-var words = ['Have a chat', 'Have a Coffee', 'Collab'];
+var words = ['Have a Chat', 'Have a Coffee', 'Collab'];
 var index = 0;
 const textDisplay = document.querySelector('#words');
 
