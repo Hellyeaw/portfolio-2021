@@ -43,13 +43,15 @@ document.addEventListener('mousemove', (e) => {
   cursorT.style.transform = `translate3d(${x}px, ${y}px, 0)`;
 });
 
-footer.addEventListener('mouseover', function () {
-  cursorT.innerHTML = footer.getAttribute('data-hover');
-});
+if (footer != null) {
+  footer.addEventListener('mouseover', function () {
+    cursorT.innerHTML = footer.getAttribute('data-hover');
+  });
 
-footer.addEventListener('mouseout', function () {
-  cursorT.innerHTML = '';
-});
+  footer.addEventListener('mouseout', function () {
+    cursorT.innerHTML = '';
+  });
+}
 
 // Nav bar
 const openBtn = document.querySelector('#openBtn');
@@ -66,8 +68,7 @@ closeBtn.onclick = function () {
   navOverlay.style.height = '0vh';
 };
 
-function closeTab()
-{
+function closeTab() {
   navOverlay.style.height = '0vh';
 }
 
@@ -77,8 +78,7 @@ logo.addEventListener('click', () => {
 });
 
 // contact Btn
-if (socialBtn != null)
-{
+if (socialBtn != null) {
   socialBtn.addEventListener('click', () => {
     socialLinks.classList.toggle('change');
   });
@@ -99,13 +99,17 @@ function myText() {
   if (textDisplay != null) {
     textDisplay.textContent = words[index];
     index++;
-    if (index === words.length) { index = 0;}
+    if (index === words.length) {
+      index = 0;
+    }
   }
 }
 
 // element transitions
 var scroll = window.requestAnimationFrame ||
-   function (callback) { window.setTimeout(callback, 1000 / 60); };
+  function (callback) {
+    window.setTimeout(callback, 1000 / 60);
+  };
 
 var elementsToShow = document.querySelectorAll('.show-on-scroll');
 
@@ -122,6 +126,7 @@ function loop() {
 }
 
 loop();
+
 function isElementInViewport(el) {
   if (typeof jQuery === 'function' && el instanceof jQuery) {
     el = el[0];
@@ -129,12 +134,10 @@ function isElementInViewport(el) {
 
   var rect = el.getBoundingClientRect();
   return (
-    (rect.top <= 0
-      && rect.bottom >= 0)
-    ||
+    (rect.top <= 0 &&
+      rect.bottom >= 0) ||
     (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-    ||
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
     (rect.top >= 0 &&
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
