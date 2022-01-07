@@ -582,11 +582,36 @@ footer p {
   padding-top: 2.5vmax;
 }
 
-.abt-linkel:hover {
+.display-links-abt, .display-links-Ref {
+  height: 0;
+  width:90%;
+  z-index: 14;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.changeAbt {
+  height: 10vh;
+}
+
+.changeRef {
+  height: 40vh;
+}
+
+.abt-linkel:hover, .abt-linkel-2:hover {
   text-decoration: underline;
   transform: skewx(-15deg);
   transform-origin: bottom;
   transition-duration: .1s;
+}
+
+.abt-linkel-2 {
+  font-size: 1.7vmax;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding-top: 2.5vmax;
+  padding-right: 3vmax;
 }
 
 .pic-cont {

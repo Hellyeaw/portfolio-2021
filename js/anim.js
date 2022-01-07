@@ -189,3 +189,18 @@ window.onload = () => {
     });
   });
 };
+
+// about linkss
+const openLinksAbt = document.querySelector('#openLinksAbt');
+const displayLinksAbt = document.querySelector('.display-links-abt');
+
+openLinksAbt.onclick = function () {
+  displayLinksAbt.classList.toggle('changeAbt');
+};
+
+const openLinksRef = document.querySelector('#openLinksRef');
+const displayLinksRef = document.querySelector('.display-links-Ref');
+
+openLinksRef.onclick = function () {
+  displayLinksRef.classList.toggle('changeRef');
+};
