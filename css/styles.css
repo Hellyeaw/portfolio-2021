@@ -685,6 +685,12 @@ footer p {
   line-height: 1.8vmax;
 }
 
+#tools {
+  padding-bottom: 1vmax;
+  font-size: 1.3vmax;
+  font-weight: 600;
+}
+
 .game-contrib a {
   text-decoration: none;
   color: black;
@@ -858,6 +864,70 @@ footer p {
   justify-content: center;
   width: 70%;
 }
+
+/* Logo Design page */
+
+.logo-header {
+  background-color: #DBC6EB;
+  background-image: url(../images/logo-line.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 101%;
+  height: 70vh;
+}
+
+.logo-header h2 {
+  font-size: 10vmax;
+  z-index: 1;
+}
+
+#jjjjj{
+  display: inline;
+}
+
+.logo-brief-link {
+  color: black;
+  font-weight: 500;
+  font-size: 1.2vmax;
+  padding-left: 1vmax;
+}
+
+.logo-brief-link:hover {
+  color: #77ACF1;
+  transition: all .3s ease-in-out;
+}
+
+#logo-brief-text {
+  margin-bottom: 0;
+  margin-top: 2.5vmax;
+}
+
+.logo-proj {
+  border: solid black 1px;
+  margin: 0 8vmax 5vmax;
+  padding: 2vmax;
+}
+
+.logo-pic-1 {
+  width: 49.8%;
+}
+
+.logo-pic-2 {
+  width: 49.8%;
+}
+
+.logo-v1 {
+  width: 45%;
+  margin-left: 4vmax;
+}
+
+.logo-v2 {
+  width: 20%;
+  margin-left: 18vmax;
+  margin-bottom: 3vmax;
+}
+
+
 /* elements transition */
 .slide-toview {
   opacity: 0;
