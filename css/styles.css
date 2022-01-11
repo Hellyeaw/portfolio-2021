@@ -927,6 +927,42 @@ footer p {
   margin-bottom: 3vmax;
 }
 
+#logo-stickers {
+  margin-top: 3vmax;
+}
+
+.logo-four {
+  width: 50%;
+}
+
+.logo-five {
+  width: 49%;
+}
+
+.logo-img-two {
+  margin: 2vmax 8vmax 10vmax;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-one {
+  width: 32.5%;
+  padding: 1vmax;
+  padding-left: 0;
+}
+
+.logo-two {
+  width: 32.5%;
+  padding: 1vmax;
+}
+
+.logo-three {
+  width: 32.5%;
+  padding: 1vmax;
+  padding-right: 0;
+}
+
+
 
 /* elements transition */
 .slide-toview {
