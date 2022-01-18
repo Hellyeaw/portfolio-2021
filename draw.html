@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="icon" href="images/logo.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/anim.css">
+</head>
+
+<body>
+  <!-- Cursor -->
+  <div class="cursor arrow-right"></div>
+  <div class="cursor2 arrow-right"></div>
+  <div class="cursor3 arrow-right"></div>
+  <div class="cursor-text"></div>
+
+  <main class="wrapper">
+    <div class="inner-wrapper fade">
+
+      <!-- navbar -->
+      <nav>
+        <a class="logo-link logo" href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
+        <div id="openBtn" class="menu-button">
+          <div class="menu-line-one"></div>
+          <p class="menu-text">Menu</p>
+          <div class="menu-line-two"></div>
+        </div>
+      </nav>
+
+      <div class="scroll-nav" id="scroll-nav">
+        <div id="closeBtn" class="closeBtn">
+          <div class="close-line-one"></div>
+          <div class="close-line-two"></div>
+        </div>
+
+        <a href="index.html" class="nav-link nav-link-cont one">Helia</a>
+        <a id="nav-link-close" href="index.html#works" class="nav-link two" onclick="closeTab()">Works</a>
+        <a id="nav-link-close" href="index.html#contact" class="nav-link nav-link-cont three" onclick="closeTab()">Contact</a>
+        <a href="about.html" class="nav-link four">About</a>
+      </div>
+
+      <!-- body -->
+      <header class="transition grow is-active draw-header">
+        <h2>Technical <br> Drawings </h2>
+      </header>
+
+      <section class="game-sec-one">
+        <div class="game-proj show-on-scroll fade-in">
+          <h3>Flower Crown</h3>
+          <p>Tazhib is a form of traditional persian and islamic art. It is a combination of geometry and ornamental motifs. We use this form of art to decorate books and sacred monuments! After Highschool, I got a job at a Persian Café, this
+            oppertunity helped me to connect back with my culture and my roots. During those years I felt the need to learn more about the art present in my home country, Iran, that is how I discovered Tazhib and fell in love with it. This painting
+            is inspired by the colors of spring in Shiraz, my mother's hometown in Iran. Through this painting I have camptured my childhood memories and the images I remember by walking in the small alleys in Shiraz.</p>
+        </div>
+        <div class="game-contrib show-on-scroll fade-in">
+          <h5>Date:</h5>
+          <p>May 2019</p>
+          <h5>Size:</h5>
+          <p>21 x 29 cm</p>
+          <h5>Medium:</h5>
+          <p>Water color and ink on paper</p>
+        </div>
+      </section>
+
+      <section class="taz-one show-on-scroll slide-toview">
+        <div class="post-module">
+          <div class="thumbnail">
+            <p class="figcap">Flower Crown</p>
+            <img src="images/drawing/Tazhib-one.jpg" alt="game screenshot">
+          </div>
+        </div>
+
+        <div class="post-module">
+          <div class="thumbnail">
+            <p class="figcap">Margin of the Sky</p>
+            <img class="img-taz-2" src="images/drawing/Tazhib-two.jpg" alt="game screenshot">
+          </div>
+        </div>
+      </section>
+
+      <section class="game-sec-one">
+        <div class="game-proj show-on-scroll fade-in">
+          <h3>Margin of the Sky</h3>
+          <p>The second painting is inspired by the mosques in Iran. The turquoise blue both refers to the domes of the mosques when looking up at them and also the sky. I have also used the cloud ornaments to implify this resemblence. The name is
+            inspired by this resemblence, as it looks as if the ornaments painted inside the domes are decorating the sky, the same way Tazhib is used to decorate sacred books and objects. I extremly enjoyed this style of painting, as it is inspired
+            by my own experiences and memories. In a way, it helps me to stay connected with a part of me that is not always accessible to me.</p>
+        </div>
+        <div class="game-contrib show-on-scroll fade-in">
+          <h5>Date:</h5>
+          <p>July 2020</p>
+          <h5>Size:</h5>
+          <p>22 x 29 cm</p>
+          <h5>Medium:</h5>
+          <p>Water color and ink on cardboard</p>
+        </div>
+      </section>
+
+      <section class="game-sec-one">
+        <div class="game-proj show-on-scroll fade-in">
+          <h3>Bugs placed in space</h3>
+          <p>In this project I tried to play with percpective, and I used different shades, pressures and sizes to create depth. My goal was to create a 3D effect on a 2D medium. My main struggle was while drawing the furthest bugs, as it was
+            challenging to apply low pressure and use lighter shades, and still being able to draw the details. I used hatching and cross hatching to create different textures and this drawing is one of my largest ones and I found it very meditative
+            and relaxing as I moved around the paper and as I added small details to my bugs.</p>
+        </div>
+        <div class="game-contrib show-on-scroll fade-in">
+          <h5>Date:</h5>
+          <p>November 2020</p>
+          <h5>Size:</h5>
+          <p>51 x 66 cm</p>
+          <h5>Medium:</h5>
+          <p>Ink on dry medium</p>
+        </div>
+      </section>
+
+      <section class="bugs-container show-on-scroll slide-toview">
+        <img class="bug-og" src="images/drawing/bug.jpg" alt="bugs">
+        <div class="bugs-second-container">
+          <img class="bug-one" src="images/drawing/bug-one.jpg" alt="bugs">
+          <img class="bug-two" src="images/drawing/bug-two.jpg" alt="bugs">
+        </div>
+      </section>
+
+      <section class="game-sec-one">
+        <div class="game-proj show-on-scroll fade-in">
+          <h3>Texture and Perspective Study</h3>
+          <p>I enjoy incorporating textures into my drawing and I also like to be able to draw my subject fom different angles. I picked couple of objects around my house and tried to create their texture on paper by using different hatching techniques. I also drew an urban landscape and created depth and 2-point perspective by employing vanishing points and changing the size and placement of buildings. These technique help me to better envision a product from different angles and display of different textures that can be used as a reference for my other artworks and designs.</p>
+        </div>
+        <div class="game-contrib show-on-scroll fade-in">
+          <h5>Date:</h5>
+          <p>september 2020</p>
+          <h5>Size:</h5>
+          <p>10.5 x 14.5 cm and 21 x 29 cm</p>
+          <h5>Medium:</h5>
+          <p>Ink and dry medium</p>
+        </div>
+      </section>
+
+      <section class="bugs-container draw-last show-on-scroll slide-toview">
+        <img class="bug-og2" src="images/drawing/texture-one.jpg" alt="bugs">
+        <div class="bugs-second-container">
+          <img class="bug-one2" src="images/drawing/ZX.jpg" alt="bugs">
+          <img class="bug-two2" src="images/drawing/texture-two.jpg" alt="bugs">
+        </div>
+      </section>
+
+      <!-- <section class="game-img-two">
+        <img class="game-pic-1 show-on-scroll slide-toview" src="images/drawing/texture-one.jpg" alt="game pic">
+        <img class="game-pic-2 show-on-scroll slide-toview" src="images/drawing/texture-two.jpg" alt="game pic">
+      </section> -->
+
+      <!-- <section class="game-img">
+        <img class="game-pic-1 show-on-scroll slide-toview" src="images/drawing/texture-one.jpg" alt="game pic">
+      </section>
+      <section class="game-img">
+        <img class="game-pic-1 show-on-scroll slide-toview" src="images/drawing/texture-two.jpg" alt="game pic">
+      </section> -->
+
+
+      <hr class="draw-home-line">
+
+      <footer class="transition exit grow draw-footer show-on-scroll slide-toview" data-hover="Click to go back to Home page">
+        <a href="index.html" class="footer big"></a>
+        <!-- <h2 class="ftitle">Home Page</h2> -->
+        <!-- <a href="Game.html" class="previous">Previous project:</a> -->
+      </footer>
+  </main>
+
+  <script src="js/anim.js"></script>
+</body>
+
+</html>

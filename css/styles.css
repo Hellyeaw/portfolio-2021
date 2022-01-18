@@ -584,7 +584,7 @@ footer p {
 
 .display-links-abt, .display-links-Ref {
   height: 0;
-  width:90%;
+  width: 90%;
   z-index: 14;
   overflow: hidden;
   transition: all 0.2s;
@@ -667,6 +667,7 @@ footer p {
   border: solid black 1px;
   padding: 2vmax;
   margin: 2vmax 8vmax 2vmax 1vmax;
+  min-width: 392px;
 }
 
 .game-sec-one h3 {
@@ -774,7 +775,6 @@ footer p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 101%;
-  height: 70vh;
 }
 
 .web-footer {
@@ -783,7 +783,6 @@ footer p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 101%;
-  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -792,6 +791,7 @@ footer p {
 .web-footer h2 {
   font-size: 10vmax;
   z-index: 1;
+  transition: .5s ease-in-out;
 }
 
 .web-gif {
@@ -820,7 +820,6 @@ footer p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 101%;
-  height: 70vh;
 }
 
 .pixel-footer {
@@ -829,12 +828,15 @@ footer p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 101%;
-  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pixel-footer h2 {
   font-size: 10vmax;
   z-index: 1;
+  transition: .5s ease-in-out;
 }
 
 .pixel-img-two {
@@ -866,14 +868,15 @@ footer p {
 }
 
 /* Logo Design page */
-
 .logo-header {
   background-color: #DBC6EB;
   background-image: url(../images/logo-line.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 101%;
-  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-header h2 {
@@ -881,7 +884,7 @@ footer p {
   z-index: 1;
 }
 
-#jjjjj{
+#jjjjj {
   display: inline;
 }
 
@@ -962,6 +965,187 @@ footer p {
   padding-right: 0;
 }
 
+.logo-footer {
+  background-color: #F2DDC1;
+  background-image: url(../images/jewel-line.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 101%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-footer h2 {
+  font-size: 9vmax;
+  z-index: 1;
+  transition: .5s ease-in-out;
+}
+
+/* Jewelery and Textiles page */
+.jewel-header {
+  background-color: #F2DDC1;
+  background-image: url(../images/jewel-line.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 101%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jewel-header h2 {
+  font-size: 9vmax;
+  z-index: 1;
+  transition: .5s ease-in-out;
+}
+
+.jewel-footer {
+  background-color: #E4D3CF;
+  background-image: url(../images/draw-line.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 101%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jewel-footer h2 {
+  font-size: 9vmax;
+  z-index: 1;
+}
+
+/* Tecnical Drawings page */
+.draw-header {
+  background-color: #E4D3CF;
+  background-image: url(../images/draw-line.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 101%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.draw-header h2 {
+  font-size: 9vmax;
+  z-index: 1;
+}
+
+.draw-home-line {
+  margin: 5vmax auto .5vmax;
+  color: grey;
+  border-width: .3vmax;
+  border-style: dotted none none;
+  width: 83.8%;
+}
+
+.draw-footer {
+  background-color: #EEEEED;
+  background-image: url(../images/home-page-footer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.draw-footer h2 {
+  font-size: 9vmax;
+  z-index: 1;
+  transition: .5s ease-in-out;
+}
+
+.taz-one {
+  width: 100%;
+  /* min-width: 640px; */
+  /* height: 55vmax; */
+  margin: 0 0.45vmax;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-module {
+  position: relative;
+  z-index: 1;
+  display: block;
+  min-width: 15vmax;
+  max-width: 40vmax;
+  margin: 1.9vmax;
+  height: 100%;
+}
+
+.post-module .thumbnail img {
+  display: block;
+  width: 100%;
+}
+
+.post-module .thumbnail .img-taz-2 {
+  display: block;
+  width: 98.2%;
+}
+
+.post-module .thumbnail {
+  height: 100%;
+  overflow: hidden;
+}
+
+.post-module .thumbnail .figcap {
+  position: absolute;
+  top: 1.4vmax;
+  left: 1.2vmax;
+  z-index: 1;
+  font-size: 1.2vmax;
+  color: black;
+}
+
+.bugs-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4vmax 8vmax 4vmax;
+}
+
+.bug-og {
+  width: 67.9%;
+  margin-right: 1vmax;
+}
+
+.bug-one, .bug-two {
+  width: 100%;
+}
+
+.bug-one {
+  margin-bottom: 1vmax;
+}
+
+.bugs-second-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bug-og2 {
+  width: 51.2%;
+  margin-right: 1vmax;
+}
+
+.bug-one2, .bug-two2 {
+  width: 100%;
+}
+
+.bug-one2 {
+  margin-bottom: 1vmax;
+}
+
+.draw-last {
+  margin-bottom: 9vmax;
+}
 
 
 /* elements transition */
