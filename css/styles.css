@@ -1016,6 +1016,51 @@ footer p {
   z-index: 1;
 }
 
+.jewel-head-img {
+  width: 83.5%;
+  margin-top: 5vmax;
+}
+
+.jewel-pic-1 {
+  width: 49.51%;
+}
+
+.jewel-pic-2 {
+  width: 49.51%;
+}
+
+.jewel-pic-3 {
+  width: 48.15%;
+}
+
+.jewel-pic-4 {
+  width: 51.4%;
+}
+
+.jewel-pic-5 {
+  width: 47.7%;
+}
+
+.jewel-pic-6 {
+  width: 51.8%;
+}
+
+.jewel-og2 {
+  width: 66%;
+}
+
+.jewel-one2, .jewel-two2 {
+  width: 95%;
+}
+
+.jewel-one2 {
+  margin-bottom: 1vmax;
+}
+
+.j-last {
+  margin-bottom: 6vmax;
+}
+
 /* Tecnical Drawings page */
 .draw-header {
   background-color: #E4D3CF;
