@@ -864,7 +864,32 @@ footer p {
   padding: 2vmax 0;
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 30%;
+}
+
+.pixel-img {
+  padding:  0;
+  display: flex;
+  justify-content: center;
+}
+
+.pixel-img2 {
+  padding:  0 0 6vmax 3vmax;
+  display: flex;
+  justify-content: center;
+}
+
+.pixel-img-three {
+  margin: 1.5vmax 8vmax 0vmax;
+}
+
+.pixel-pic-3 {
+  width: 45.5%;
+}
+
+.pixel-pic-4 {
+  width: 54%;
+  padding-bottom: 1vmax
 }
 
 /* Logo Design page */
