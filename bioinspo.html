@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="icon" href="images/logo.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/anim.css">
+</head>
+
+<body>
+  <!-- Cursor -->
+  <div class="cursor arrow-right"></div>
+  <div class="cursor2 arrow-right"></div>
+  <div class="cursor3 arrow-right"></div>
+  <div class="cursor-text"></div>
+
+  <main class="wrapper">
+    <div class="inner-wrapper fade">
+
+      <!-- navbar -->
+      <nav>
+        <a class="logo-link logo" href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
+        <div id="openBtn" class="menu-button">
+          <div class="menu-line-one"></div>
+          <p class="menu-text">Menu</p>
+          <div class="menu-line-two"></div>
+        </div>
+      </nav>
+
+      <div class="scroll-nav" id="scroll-nav">
+        <div id="closeBtn" class="closeBtn">
+          <div class="close-line-one"></div>
+          <div class="close-line-two"></div>
+        </div>
+
+        <a href="index.html" class="nav-link nav-link-cont one">Helia</a>
+        <a id="nav-link-close" href="index.html#works" class="nav-link two" onclick="closeTab()">Works</a>
+        <a id="nav-link-close" href="index.html#contact" class="nav-link nav-link-cont three" onclick="closeTab()">Contact</a>
+        <a href="about.html" class="nav-link four">About</a>
+      </div>
+
+      <!-- body -->
+      <header class="transition grow is-active pixel-header">
+        <h2 id="bio-title">Bio-Inspiration <br> Design </h2>
+      </header>
+
+      <section class="game-sec-one">
+        <div class="game-proj show-on-scroll fade-in">
+          <h3>Myca Side Table/ Stool</h3>
+          <p id="tools">Tools: Adobe Illustrator, CNC Machine, Band Saw, Sanders </p>
+          <p> Myca is a side table or a stool inspired by the shape of fungi and the characteristics of Mycelium. It is made of Russian Plywood, it's light and stable. It also
+           hasan an organic and abstract shape that mimics the shapes of different fungi. It is varnished with Linseed Oil that is natural and non-toxic and it is completely
+         bio-degradable. <br> Myca is also made for disassembly. Therfore, it needs no glue or physical attachment tools to be assembled. This characteristic
+       also minimizes waste in transportation and packaging of the product.  </p>
+        </div>
+        <div class="game-contrib show-on-scroll fade-in">
+          <h5>Date:</h5>
+          <p>Mar 2023</p>
+          <h5>Team:</h5>
+          <p>Designer and Manufacturer: Helia Golmohammadi, <br> Jaya Guibert, Ella Olsen, Madeleine Mae Muir</p>
+          <h5>Size: </h5>
+          <p>20inch x 20inch</p>
+          <h5>Process pdf: </h5>
+          <a href="css/myca.pdf" target="_blank">Myca stool/ side table</a>
+        </div>
+      </section>
+
+      <section class="game-img">
+        <img class="bio-pic" src="images/bio/myca.jpg" alt="myca stool/ side table">
+      </section>
+
+      <section class="game-sec-one">
+        <div class="game-proj-2 show-on-scroll fade-in">
+          <p> The process started by many sketches, narrowed down on one final design. Afterwards we created maquettes to see the size and the shapes in their physical form.
+          This step helped us to have a better idea of the dimenstions and make modifications when needed. After wards we created our final pieces on Illustrator to prepare our files
+        to be cut by the CNC machine. </p>
+        </div>
+      </section>
+
+      <section class="game-img-two">
+        <img class="logo-pic-1 show-on-scroll slide-toview" src="images\bio/sk1.jpg" alt="game pic">
+        <img id="sk2" class="logo-pic-2 show-on-scroll slide-toview" src="images\bio/sk2.jpg" alt="game pic">
+      </section>
+
+      <section class="game-img-two">
+        <img class="logo-pic-1 show-on-scroll slide-toview" src="images\bio/mq1.jpg" alt="game pic">
+        <img class="logo-pic-2 show-on-scroll slide-toview" src="images\bio/mq2.jpg" alt="game pic">
+      </section>
+
+      <section class="game-sec-one">
+        <div class="game-proj-2 show-on-scroll fade-in">
+          <p> Afterwards, we cut our pieces with the CNC machine. Then, the pieces were seperated with the Band Saw, sanded, and varnished. The final pieces
+          were assembled. At this step, We analysed different angles of our stool/ side table, and we decided to change the shape of some pieces. </p>
+        </div>
+      </section>
+
+      <section class="game-img-two">
+        <img class="logo-pic-1 show-on-scroll slide-toview" src="images\bio/cn1.jpg" alt="game pic">
+        <img class="logo-pic-2 show-on-scroll slide-toview" src="images\bio/cn2.jpg" alt="game pic">
+      </section>
+
+      <section class="game-img">
+        <img class="bio-pic2" src="images/bio/mod1.jpg" alt="myca stool/ side table">
+      </section>
+
+      <section class="game-sec-one">
+        <div class="game-proj-2 show-on-scroll fade-in">
+          <p>We finalized our Illustrator files, and repeated all the steps to achieve our desired Myca stool/ side table. </p>
+        </div>
+      </section>
+
+      <section class="game-img">
+        <img id="td" class="bio-pic2" src="images/bio/td.png" alt="myca stool/ side table">
+      </section>
+
+      <section class="game-img-two">
+        <img class="logo-pic-1 show-on-scroll slide-toview" src="images\bio/st5.jpg" alt="game pic">
+        <img class="logo-pic-2 show-on-scroll slide-toview" src="images\bio/st2.jpg" alt="game pic">
+      </section>
+
+      <section class="game-img">
+        <video class="biovid" src="images/bio/vid.mp4" autoplay controls loop alt="myca stool/ side table"></video>
+      </section>
+
+    </div>
+
+
+    <footer class="transition exit grow pixel-footer show-on-scroll slide-toview" data-hover="Click to view the next project">
+      <a href="logo.html" class="footer big"></a>
+      <h2>Logo Design </h2>
+      <!-- <a href="Game.html" class="previous">Previous project:</a> -->
+    </footer>
+  </main>
+
+  <script src="js/anim.js"></script>
+  <script src="js/sw-cache.js"></script>
+</body>
+
+</html>
